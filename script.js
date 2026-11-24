@@ -14,7 +14,33 @@ document.querySelectorAll('.js-placeholder').forEach((button) => {
 
 document.querySelector('#simulator').addEventListener('submit', (event) => {
   event.preventDefault();
-  showPlaceholder('Simulação visual — destino ainda não configurado.');
+  openModal();
+});
+
+const modal = document.querySelector('#simulation-modal');
+let previouslyFocused;
+
+function openModal() {
+  previouslyFocused = document.activeElement;
+  modal.classList.add('open');
+  modal.setAttribute('aria-hidden', 'false');
+  document.body.classList.add('modal-open');
+  modal.querySelector('.modal-close').focus();
+}
+
+function closeModal() {
+  modal.classList.remove('open');
+  modal.setAttribute('aria-hidden', 'true');
+  document.body.classList.remove('modal-open');
+  previouslyFocused?.focus();
+}
+
+modal.querySelectorAll('[data-close-modal]').forEach((element) => {
+  element.addEventListener('click', closeModal);
+});
+
+document.addEventListener('keydown', (event) => {
+  if (event.key === 'Escape' && modal.classList.contains('open')) closeModal();
 });
 
 const amount = document.querySelector('#amount');
