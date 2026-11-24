@@ -1,0 +1,133 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Simulação informativa de portabilidade de empréstimo consignado INSS.">
+  <title>Portabilidade de Consignado INSS | Parceiro Itaú</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="topbar">
+    <a class="brand" href="#inicio" aria-label="Início">
+      <span class="brand-mark" aria-hidden="true">itaú</span>
+      <span class="brand-copy"><strong>Portabilidade INSS</strong><small>Atendimento por parceiro</small></span>
+    </a>
+    <button class="button button-dark js-placeholder" type="button">Quero simular</button>
+  </header>
+
+  <main id="inicio">
+    <section class="hero section">
+      <div class="hero-copy">
+        <span class="eyebrow">Portabilidade de consignado INSS</span>
+        <h1>Troque seu contrato por uma condição que pode fazer mais sentido.</h1>
+        <p class="lead">Consulte a possibilidade de levar seu empréstimo consignado para o Itaú, comparar as condições e verificar se existe valor adicional disponível.</p>
+        <div class="trust-line"><span>✓</span> Consulta sem compromisso <span>✓</span> Processo acompanhado</div>
+      </div>
+
+      <form class="simulator" id="simulator">
+        <span class="card-label">Simulação inicial</span>
+        <h2>Conte um pouco sobre seu contrato</h2>
+        <label for="amount">Valor aproximado do empréstimo</label>
+        <div class="money-field"><span>R$</span><input id="amount" name="amount" inputmode="decimal" placeholder="0,00" autocomplete="off"></div>
+        <label for="installments">Quantidade total de parcelas</label>
+        <select id="installments" name="installments">
+          <option value="">Selecione uma opção</option>
+          <option>Até 24 parcelas</option><option>De 25 a 48 parcelas</option><option>De 49 a 72 parcelas</option><option>Mais de 72 parcelas</option>
+        </select>
+        <button class="button button-primary" type="submit">Simular portabilidade</button>
+        <p class="fine-print">Esta etapa é apenas informativa. Condições dependem de análise e das regras vigentes.</p>
+      </form>
+    </section>
+
+    <section class="section benefits">
+      <div class="section-heading"><span class="eyebrow">Vantagens</span><h2>Por que avaliar a portabilidade?</h2><p>Uma análise clara ajuda você a comparar o contrato atual antes de decidir.</p></div>
+      <div class="card-grid five">
+        <article class="feature-card"><span class="icon">↘</span><h3>Possibilidade de reduzir juros</h3><p>Compare a taxa atual com a condição disponível no momento da análise.</p></article>
+        <article class="feature-card"><span class="icon">↔</span><h3>Parcela sob controle</h3><p>Entenda prazo, valor de parcela e custo total antes de seguir.</p></article>
+        <article class="feature-card"><span class="icon">＋</span><h3>Possível valor adicional</h3><p>Quando houver diferença favorável, a proposta poderá indicar um valor extra.</p></article>
+        <article class="feature-card"><span class="icon">✓</span><h3>Sem tarifa antecipada</h3><p>Nunca faça pagamentos prévios para liberar uma proposta de crédito.</p></article>
+        <article class="feature-card"><span class="icon">◎</span><h3>Acompanhamento</h3><p>Receba orientação sobre cada etapa e confirme tudo antes da contratação.</p></article>
+      </div>
+      <button class="button button-outline js-placeholder" type="button">Avaliar meu contrato</button>
+    </section>
+
+    <section class="section explainer split">
+      <div><span class="eyebrow">Entenda</span><h2>O que é portabilidade de consignado?</h2><p>É a transferência de um contrato ativo de uma instituição para outra. A nova instituição quita o saldo com o banco de origem e apresenta um novo contrato, que pode ter taxa, prazo ou outras condições diferentes.</p><p>Antes de contratar, você deve conferir o Custo Efetivo Total (CET), o número de parcelas, o valor total a pagar e qualquer valor adicional incluído na operação.</p><button class="button button-dark js-placeholder" type="button">Quero entender minha opção</button></div>
+      <div class="visual-card">
+        <div class="bank old"><small>Contrato atual</small><strong>Instituição de origem</strong><span>Saldo devedor ativo</span></div>
+        <div class="transfer-arrow">→</div>
+        <div class="bank new"><small>Nova proposta</small><strong>Itaú</strong><span>Condições para comparar</span></div>
+      </div>
+    </section>
+
+    <section class="section steps-section">
+      <div class="section-heading"><span class="eyebrow">Como funciona</span><h2>Uma jornada simples e transparente</h2></div>
+      <div class="steps">
+        <article><span>1</span><h3>Informe seu contrato</h3><p>Compartilhe os dados básicos para iniciar a análise.</p></article>
+        <article><span>2</span><h3>Compare a proposta</h3><p>Confira taxa, CET, parcela, prazo e valor total.</p></article>
+        <article><span>3</span><h3>Autorize com segurança</h3><p>Se decidir avançar, siga as confirmações oficiais solicitadas.</p></article>
+        <article><span>4</span><h3>Acompanhe a transferência</h3><p>O saldo anterior é liquidado e o novo contrato passa a vigorar.</p></article>
+      </div>
+    </section>
+
+    <section class="section example-section">
+      <div class="example-card">
+        <div><span class="eyebrow light">Exemplo ilustrativo</span><h2>Veja o que comparar antes de decidir</h2><p>Os números abaixo são apenas uma demonstração visual. A proposta real dependerá da análise do contrato.</p></div>
+        <div class="comparison">
+          <div><small>Contrato atual</small><strong>Taxa e prazo atuais</strong><span>Saldo devedor informado</span></div>
+          <span class="comparison-arrow">→</span>
+          <div class="highlight"><small>Nova proposta</small><strong>Condição disponível</strong><span>Economia ou troco, se aplicável</span></div>
+        </div>
+        <button class="button button-light js-placeholder" type="button">Comparar meu contrato</button>
+      </div>
+    </section>
+
+    <section class="section audience">
+      <div class="section-heading"><span class="eyebrow">Quem pode avaliar</span><h2>A portabilidade pode ser uma opção para você se...</h2></div>
+      <div class="check-grid"><p>✓ É aposentado ou pensionista do INSS</p><p>✓ Possui contrato consignado ativo</p><p>✓ Quer comparar condições com outro banco</p><p>✓ Tem os dados do contrato disponíveis</p></div>
+      <p class="notice">A elegibilidade e as condições finais estão sujeitas à análise, às políticas de crédito e às normas aplicáveis.</p>
+      <button class="button button-primary js-placeholder" type="button">Solicitar análise</button>
+    </section>
+
+    <section class="section decision">
+      <div class="section-heading"><span class="eyebrow">Compare as alternativas</span><h2>Qual opção combina com o seu objetivo?</h2></div>
+      <div class="table-wrap"><table><thead><tr><th></th><th>Novo consignado</th><th>Portabilidade</th><th>Refinanciamento</th></tr></thead><tbody><tr><th>Para quem</th><td>Tem margem disponível</td><td>Tem contrato em outro banco</td><td>Renegocia contrato no banco atual</td></tr><tr><th>Objetivo</th><td>Contratar um novo crédito</td><td>Transferir o contrato</td><td>Reorganizar o contrato existente</td></tr><tr><th>O que comparar</th><td>Taxa, CET e prazo</td><td>Economia total e condições</td><td>Novo prazo e custo total</td></tr></tbody></table></div>
+      <button class="button button-outline js-placeholder" type="button">Descobrir a melhor opção</button>
+    </section>
+
+    <section class="section rules split">
+      <div><span class="eyebrow">Segurança</span><h2>Confirme sempre pelos canais corretos</h2><p>Operações de consignado podem exigir desbloqueio do benefício e confirmação no Meu INSS. Confira os detalhes da proposta antes de autorizar e nunca compartilhe senha, código de acesso ou pagamento antecipado.</p><button class="button button-dark js-placeholder" type="button">Receber orientação</button></div>
+      <aside class="safety-card"><strong>Atenção contra golpes</strong><ul><li>Não pague tarifa antecipada.</li><li>Não entregue sua senha do Meu INSS.</li><li>Confira taxa, CET e valor total.</li><li>Valide a identidade do atendente.</li></ul></aside>
+    </section>
+
+    <section class="section faq">
+      <div class="section-heading"><span class="eyebrow">Dúvidas</span><h2>Perguntas frequentes</h2></div>
+      <div class="accordion">
+        <details><summary>Preciso ter margem livre para portar o contrato?<span>＋</span></summary><p>Em geral, a portabilidade substitui um contrato já existente. A viabilidade depende da análise do contrato e das regras vigentes.</p></details>
+        <details><summary>A portabilidade tem custo antecipado?<span>＋</span></summary><p>Não faça pagamento prévio para liberar crédito. Se alguém pedir depósito, transferência ou Pix antecipado, interrompa o contato.</p></details>
+        <details><summary>O que devo comparar na proposta?<span>＋</span></summary><p>Confira taxa mensal e anual, CET, valor e quantidade de parcelas, total a pagar e eventual valor adicional.</p></details>
+        <details><summary>Quanto tempo o processo pode levar?<span>＋</span></summary><p>O prazo varia conforme as instituições envolvidas, a documentação e as confirmações necessárias.</p></details>
+        <details><summary>A contratação é automática após a simulação?<span>＋</span></summary><p>Não. A simulação é informativa e não representa aprovação nem contratação. Você decide se quer seguir após conhecer a proposta.</p></details>
+      </div>
+    </section>
+
+    <section class="section final-cta">
+      <div><span class="eyebrow light">Pronto para comparar?</span><h2>Descubra se a portabilidade pode melhorar seu contrato.</h2><p>Faça uma avaliação inicial e receba as informações necessárias para decidir com segurança.</p></div>
+      <button class="button button-light js-placeholder" type="button">Começar simulação</button>
+    </section>
+  </main>
+
+  <footer>
+    <div class="footer-brand"><span class="brand-mark">itaú</span><div><strong>[Nome da sua empresa]</strong><p>Correspondente/parceiro responsável pelo atendimento desta página.</p></div></div>
+    <p class="legal">Esta página é operada por <strong>[Nome da sua empresa]</strong>, parceiro independente. Não é o site oficial do Itaú Unibanco. O uso da marca deve estar autorizado no contrato de parceria. Crédito sujeito à análise e aprovação. Consulte as condições da proposta antes da contratação.</p>
+    <p class="copyright">© 2026 [Nome da sua empresa]. Todos os direitos reservados.</p>
+  </footer>
+
+  <div class="toast" id="toast" role="status" aria-live="polite">Botão reservado para configuração.</div>
+  <script src="script.js"></script>
+</body>
+</html>
