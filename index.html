@@ -10,6 +10,48 @@
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="styles.css">
   <link rel="stylesheet" href="modal.css">
+  <style>
+    .whatsapp-float {
+      position: fixed;
+      right: 24px;
+      bottom: 24px;
+      z-index: 1000;
+      display: grid;
+      width: 60px;
+      height: 60px;
+      place-items: center;
+      border-radius: 50%;
+      background: #25d366;
+      color: #fff;
+      box-shadow: 0 8px 24px rgba(0, 0, 0, .24);
+      transition: transform .2s ease, box-shadow .2s ease;
+    }
+
+    .whatsapp-float:hover {
+      transform: translateY(-3px) scale(1.04);
+      box-shadow: 0 12px 28px rgba(0, 0, 0, .3);
+    }
+
+    .whatsapp-float:focus-visible {
+      outline: 3px solid #fff;
+      outline-offset: 3px;
+    }
+
+    .whatsapp-float svg {
+      width: 34px;
+      height: 34px;
+      fill: currentColor;
+    }
+
+    @media (max-width: 600px) {
+      .whatsapp-float {
+        right: 16px;
+        bottom: 16px;
+        width: 56px;
+        height: 56px;
+      }
+    }
+  </style>
 </head>
 <body>
   <header class="topbar">
@@ -136,6 +178,11 @@
       <a class="button button-primary" href="https://wa.me/5511968213396?text=Ol%C3%A1%2C%20gostaria%20de%20simular%20minha%20portabilidade." target="_blank" rel="noopener noreferrer">Falar com um consultor</a>
     </div>
   </div>
+  <a class="whatsapp-float" href="https://wa.me/5511968213396?text=Ol%C3%A1%2C%20gostaria%20de%20atendimento%21" target="_blank" rel="noopener noreferrer" aria-label="Falar pelo WhatsApp">
+    <svg viewBox="0 0 32 32" aria-hidden="true" focusable="false">
+      <path d="M19.11 17.21c-.26-.13-1.54-.76-1.78-.85-.24-.09-.41-.13-.59.13-.17.26-.67.85-.82 1.02-.15.17-.3.2-.56.07-.26-.13-1.09-.4-2.08-1.29-.77-.69-1.29-1.53-1.44-1.79-.15-.26-.02-.4.11-.53.12-.12.26-.3.39-.46.13-.15.17-.26.26-.43.09-.17.04-.33-.02-.46-.07-.13-.59-1.41-.8-1.94-.21-.51-.43-.44-.59-.45h-.5c-.17 0-.46.07-.69.33-.24.26-.91.89-.91 2.17s.93 2.52 1.06 2.69c.13.17 1.83 2.8 4.44 3.93.62.27 1.1.43 1.48.55.62.2 1.19.17 1.64.1.5-.07 1.54-.63 1.76-1.24.22-.61.22-1.13.15-1.24-.06-.11-.24-.17-.5-.3zM16.03 3a12.9 12.9 0 0 0-11.02 19.62L3.16 29l6.53-1.71A12.98 12.98 0 1 0 16.03 3zm0 23.8a10.8 10.8 0 0 1-5.5-1.51l-.39-.23-3.87 1.01 1.03-3.77-.25-.39A10.8 10.8 0 1 1 16.03 26.8z"/>
+    </svg>
+  </a>
   <script src="script.js"></script>
 </body>
 </html>
